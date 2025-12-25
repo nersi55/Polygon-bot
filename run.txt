@@ -1,0 +1,31 @@
+# How to Run the Polymarket Bot
+
+1. **Environment Variables**:
+   You MUST create a `.env` file in the root directory. This file is excluded from GitHub for security.
+
+2. **Sample .env Configuration**:
+   Create a file named `.env` and paste the following, replacing the placeholders with your actual credentials:
+
+   ```env
+   # Polymarket CLOB Credentials
+   PRIVATE_KEY=your_private_key_here
+   CLOB_API_KEY=your_api_key_here
+   CLOB_API_SECRET=your_api_secret_here
+   CLOB_API_PASSPHRASE=your_api_passphrase_here
+
+   # Polygon Network
+   CHAIN_ID=137
+
+   # Market Settings
+   MARKET_SLUG=btc-updown-15m-1766679300
+   ```
+
+3. **Install Dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Run the Bot**:
+   ```bash
+   python bot.py
+   ```
